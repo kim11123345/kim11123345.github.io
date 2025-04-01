@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>후쿠오카 여행</title>
+    <style>
+        .container {
+          display: grid;
+          grid-template-rows: 100px 1fr;
+          grid-template-columns: 15% 1fr 20%;
+          grid-template-areas:
+            "header header header"
+            "nav section aside";
+          height: 900px;
+          width: 100%;
+        }
+      
+        header {
+          grid-area: header;
+          background-color: lightcoral;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        h1 {
+          color: white;
+        }
+
+        nav {
+          grid-area: nav;
+          background-color: #f8f8f8;
+        }
+      
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+
+        nav ul li {
+          padding: 15px;
+          text-align: center;
+        }
+
+        section {
+          grid-area: section;
+          background-color: #d8f8d8;
+          padding: 20px;
+        }
+      
+        aside {
+          grid-area: aside;
+          background-color: #f4f4f4;
+          border: 1px solid gray;
+        }
+
+        h3 {
+          color: #2a9d8f;
+        }
+
+        p {
+          color: #333;
+        }
+      
+        #trip-info, #itinerary, #packing-list {
+          margin-top: 20px;
+        }
+
+        pre code {
+          background-color: #f0f0f0;
+          padding: 10px;
+          display: block;
+          border-radius: 5px;
+          overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <header>
+        <h1>후쿠오카 여행 계획</h1>
+      </header>
+      <nav>
+        <ul>
+            <li><a href="https://travel.naver.com/overseas/JPFUK298207/city/summary">여행지 정보</a></li>
+            <li><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4+%EC%9D%BC%EC%A0%95&oquery=%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4&tqi=i%2BX4JdqX5mNssZrWxm4ssssstlR-181391">여행 일정</a></li>
+            <li><a href="https://blog.naver.com/eyeren/223798705329">준비물</a></li>
+            <li><a href="https://blog.naver.com/eunjeong-choi/223810593099">여행 팁</a></li>
+            <li><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4+%EC%98%88%EC%82%B0&oquery=%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4+%EC%97%AC%ED%96%89+%ED%8C%81&tqi=i%2BX6bwqX5mNssv9H5T4ssssssj4-095825">여행 예산</a></li>
+        </ul>
+      </nav>
+      <section>
+        <article id="trip-info">
+            <h3>1. 여행지 정보</h3>
+            <p>목표 여행지는 일본 후쿠오카입니다.후쿠오카는 일본 규슈 지역에 위치한 활기찬 도시로, 역사와 현대가 잘 어우러진 매력적인 곳입니다. 후쿠오카는 특히 맛있는 음식으로 유명한데, 대표적인 음식으로는 라멘, 모츠나베, 그리고 히카리야마의 스시가 있습니다. 또한, 후쿠오카에는 많은 관광 명소가 있는데, 그 중에서 하카타 역 근처의 하카타 마츠리나, 아름다운 후쿠오카 타워, 그리고 멋진 자연을 즐길 수 있는 오호리 공원이 있습니다. 후쿠오카는 교통이 편리하고, 쇼핑과 문화 활동도 다양해서 많은 관광객들이 찾는 인기 여행지입니다.</p>
+        </article>
+        <article id="itinerary">
+            <h3>2. 여행 일정</h3>
+            <p>여행 기간: 2025년 4월 3일 - 2025년 4월 6일</p>
+            <ul>
+                <li>4월 3일: 저녁에 도착</li>
+                <li>4월 4일: 후쿠오카 타워</li>
+                <li>4월 5일: 캐널시티</li>
+                <li>4월 6일: 귀국</li>
+            </ul>
+        </article>
+        <article id="packing-list">
+            <h3>3. 준비물</h3>
+            <p>여행을 떠나기 전에 챙겨야 할 필수 아이템:</p>
+            <ul>
+                <li>여권 및 비자</li>
+                <li>여행자 보험</li>
+                <li>충전기 및 어댑터</li>
+                <li>편안한
